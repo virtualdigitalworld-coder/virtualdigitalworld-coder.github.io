@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:#F6F2E9;color:#211C16;font-family:'Manrope',sans-serif;-webkit-font-smoothing:antialiased}
+  ::selection{background:#0B9444;color:#fff}
+  @keyframes cg-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @keyframes cg-rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+  .cg-marquee-track:hover{animation-play-state:paused}
+  a{color:inherit;text-decoration:none}
+</style>
+</helmet>
+<div style="overflow-x:hidden;width:100%">
+
+<!-- ============ HEADER ============ -->
+<header style="position:sticky;top:0;z-index:50;background:rgba(246,242,233,0.82);backdrop-filter:blur(14px);border-bottom:1px solid #E6DFCF">
+  <div style="max-width:1240px;margin:0 auto;padding:16px 40px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+    <a href="#top" style="display:flex;align-items:center;gap:12px">
+      <span style="width:38px;height:38px;border-radius:50%;background:#0B9444;display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:22px">C</span>
+      <span style="display:flex;flex-direction:column;line-height:1">
+        <span style="font-family:'Cormorant Garamond',serif;font-size:23px;font-weight:600;letter-spacing:.5px">Chinoghar</span>
+        <span style="font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#0B9444;font-weight:600;margin-top:3px">Engraving with Love</span>
+      </span>
+    </a>
+    <nav style="display:flex;gap:34px;align-items:center;font-size:14px;font-weight:500">
+      <a href="#about" style="color:#5C5347" style-hover="color:#0B9444">About</a>
+      <a href="#deal" style="color:#5C5347" style-hover="color:#0B9444">Craft</a>
+      <a href="#products" style="color:#5C5347" style-hover="color:#0B9444">Products</a>
+      <a href="#corporate" style="color:#5C5347" style-hover="color:#0B9444">Corporate</a>
+      <a href="#clients" style="color:#5C5347" style-hover="color:#0B9444">Clients</a>
+    </nav>
+    <a href="#contact" style="background:#211C16;color:#F6F2E9;font-size:13px;font-weight:600;padding:11px 22px;border-radius:40px;letter-spacing:.3px" style-hover="background:#0B9444">Get a quote</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="top" style="max-width:1240px;margin:0 auto;padding:72px 40px 40px;display:grid;grid-template-columns:1.05fr 0.95fr;gap:64px;align-items:center">
+  <div>
+    <div style="display:inline-flex;align-items:center;gap:9px;border:1px solid #D7CDB6;border-radius:40px;padding:7px 16px;margin-bottom:30px">
+      <span style="width:7px;height:7px;border-radius:50%;background:#0B9444"></span>
+      <span style="font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#5C5347;font-weight:600">Handcrafted in Nepal · Since 2020</span>
+    </div>
+    <h1 style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:78px;line-height:0.98;letter-spacing:-1px;margin-bottom:26px">Gifts that<br>carry <em style="font-style:italic;color:#0B9444">meaning</em>,<br>engraved by hand.</h1>
+    <p style="font-size:17px;line-height:1.7;color:#5C5347;max-width:480px;margin-bottom:36px">Precision engraving on wood, bamboo, glass and acrylic — from personalised keepsakes to complete corporate gift suites, crafted with quality materials and delivered worldwide.</p>
+    <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+      <a href="#products" style="background:#0B9444;color:#fff;font-size:15px;font-weight:600;padding:15px 30px;border-radius:44px;display:inline-flex;align-items:center;gap:10px" style-hover="background:#0A7E3A">Explore products <span style="font-size:18px">→</span></a>
+      <a href="#corporate" style="font-size:15px;font-weight:600;padding:15px 22px;color:#211C16;border-bottom:1px solid #211C16" style-hover="color:#0B9444">Corporate gifting</a>
+    </div>
+    <div style="display:flex;gap:44px;margin-top:54px">
+      <div><div style="font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:600;color:#0B9444">4</div><div style="font-size:13px;color:#5C5347;letter-spacing:.5px">Materials mastered</div></div>
+      <div><div style="font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:600;color:#0B9444">19+</div><div style="font-size:13px;color:#5C5347;letter-spacing:.5px">Brands served</div></div>
+      <div><div style="font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:600;color:#0B9444">100%</div><div style="font-size:13px;color:#5C5347;letter-spacing:.5px">Customisable</div></div>
+    </div>
+  </div>
+  <div style="position:relative">
+    <div style="position:relative;border-radius:8px;overflow:hidden;box-shadow:0 30px 70px -28px rgba(33,28,22,0.55);aspect-ratio:4/5">
+      <img src="extracted/p02_i00.png" alt="Craftsman engraving by hand" style="width:100%;height:100%;object-fit:cover;display:block">
+    </div>
+    <div style="position:absolute;bottom:-26px;left:-26px;background:#F6F2E9;border:1px solid #E6DFCF;border-radius:8px;padding:16px 20px;box-shadow:0 16px 40px -20px rgba(33,28,22,0.45);display:flex;align-items:center;gap:14px;max-width:230px">
+      <span style="width:42px;height:42px;border-radius:8px;background:#0B9444;flex:none;display:flex;align-items:center;justify-content:center;color:#fff;font-size:20px">✦</span>
+      <span style="font-size:13px;line-height:1.4;color:#3A332A;font-weight:500">Wood · Bamboo · Glass · Acrylic — engraved to order</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" style="background:#211C16;color:#EDE7D8;margin-top:70px">
+  <div style="max-width:1240px;margin:0 auto;padding:96px 40px;display:grid;grid-template-columns:0.9fr 1.1fr;gap:72px;align-items:center">
+    <div style="position:relative">
+      <div style="border-radius:8px;overflow:hidden;aspect-ratio:1/1;box-shadow:0 30px 60px -30px rgba(0,0,0,0.6)">
+        <img src="extracted/p02_i01.png" alt="Bamboo product collection" style="width:100%;height:100%;object-fit:cover;display:block">
+      </div>
+      <div style="position:absolute;-bottom:0;bottom:-22px;right:-22px;background:#0B9444;color:#fff;border-radius:8px;padding:18px 22px;text-align:center">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:600;line-height:1">Est.<br>2020</div>
+      </div>
+    </div>
+    <div>
+      <span style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#0B9444;font-weight:700">Our Story</span>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:46px;line-height:1.1;margin:18px 0 26px;letter-spacing:-.5px">A young Nepali studio that found its identity in engraving.</h2>
+      <p style="font-size:16px;line-height:1.8;color:#B8B0A0;margin-bottom:34px;max-width:560px">A group of passionate young individuals came together with a vision to create something meaningful in Nepal. What began as a small initiative rooted in creativity and craftsmanship soon found its identity in engraving — crafting beautiful, personalised designs on wood, glass and acrylic.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:30px 40px">
+        <div style="border-top:1px solid #3A342A;padding-top:18px">
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;margin-bottom:8px">Craftsmanship</h3>
+          <p style="font-size:14px;line-height:1.65;color:#9C9484">Meaningful pieces from quality woods — from affordable Karam to premium Sissoo and Walnut, balancing durability, elegance and value.</p>
+        </div>
+        <div style="border-top:1px solid #3A342A;padding-top:18px">
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;margin-bottom:8px">Our Expertise</h3>
+          <p style="font-size:14px;line-height:1.65;color:#9C9484">Wood, bamboo, glass and acrylic products — crafted both by hand and with advanced machinery, for custom gifts and corporate solutions.</p>
+        </div>
+        <div style="border-top:1px solid #3A342A;padding-top:18px">
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;margin-bottom:8px">Sustainability</h3>
+          <p style="font-size:14px;line-height:1.65;color:#9C9484">“Engraving with Love” is our promise to create eco-friendly products that give back to the community and environment.</p>
+        </div>
+        <div style="border-top:1px solid #3A342A;padding-top:18px">
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;margin-bottom:8px">Our Mission</h3>
+          <p style="font-size:14px;line-height:1.65;color:#9C9484">As importers and exporters, we ensure top-quality materials and deliver excellence from local hands to global homes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLIENTS MARQUEE ============ -->
+<section id="clients" style="padding:64px 0 60px;border-bottom:1px solid #E6DFCF">
+  <div style="max-width:1240px;margin:0 auto;padding:0 40px;display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:42px">
+    <div>
+      <span style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#0B9444;font-weight:700">Trusted by</span>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:44px;line-height:1.05;margin-top:12px;letter-spacing:-.5px">Brands who gift with Chinoghar</h2>
+    </div>
+    <p style="font-size:14px;color:#5C5347;max-width:300px;line-height:1.6;padding-bottom:6px">From hospitals and resorts to tech studios and government bodies — across Nepal and beyond.</p>
+  </div>
+  <div style="position:relative;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)">
+    <div class="cg-marquee-track" style="display:flex;gap:26px;width:max-content;animation:cg-marquee 46s linear infinite">
+      <sc-for list="{{ clientsLoop }}" as="logo" hint-placeholder-count="12">
+        <div title="{{ logo.name }}" style="flex:none;width:172px;height:118px;background:#fff;border:1px solid #ECE5D6;border-radius:10px;display:flex;align-items:center;justify-content:center;padding:22px;box-shadow:0 8px 22px -16px rgba(33,28,22,0.4)">
+          <img src="{{ logo.src }}" alt="{{ logo.name }}" style="max-width:100%;max-height:100%;object-fit:contain;display:block"/>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT WE DEAL WITH ============ -->
+<section id="deal" style="max-width:1240px;margin:0 auto;padding:100px 40px 80px">
+  <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:48px;flex-wrap:wrap">
+    <div>
+      <span style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#0B9444;font-weight:700">What we deal with</span>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:46px;line-height:1.05;margin-top:12px;letter-spacing:-.5px">Four materials,<br>one obsession with detail.</h2>
+    </div>
+    <p style="font-size:15px;color:#5C5347;max-width:340px;line-height:1.7;padding-bottom:6px">Every surface is engraved by skilled craftsmen with meticulous attention — by hand and with advanced machinery.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:22px">
+    <sc-for list="{{ deals }}" as="d" hint-placeholder-count="4">
+      <div style="position:relative;border-radius:10px;overflow:hidden;aspect-ratio:3/4;box-shadow:0 18px 40px -26px rgba(33,28,22,0.5)">
+        <img src="{{ d.img }}" alt="{{ d.name }} engraving" style="width:100%;height:100%;object-fit:cover;display:block;filter:saturate(1.02)"/>
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,12,0) 38%,rgba(20,16,12,0.82) 100%)"></div>
+        <div style="position:absolute;left:0;right:0;bottom:0;padding:22px">
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;color:#fff;line-height:1">{{ d.name }}</h3>
+          <p style="font-size:12.5px;color:#E2DCCD;margin-top:6px;font-weight:500">{{ d.sub }}</p>
+        </div>
+        <span style="position:absolute;top:14px;left:14px;width:30px;height:30px;border-radius:50%;background:rgba(11,148,68,0.92);color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center">{{ d.initial }}</span>
+      </div>
+    </sc-for>
+  </div>
+</section>
+
+<!-- ============ PRODUCTS ============ -->
+<section id="products" style="background:#EEE8D9;border-top:1px solid #E6DFCF;border-bottom:1px solid #E6DFCF">
+  <div style="max-width:1240px;margin:0 auto;padding:96px 40px">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:50px;flex-wrap:wrap">
+      <div>
+        <span style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#0B9444;font-weight:700">The collection</span>
+        <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:48px;line-height:1.02;margin-top:12px;letter-spacing:-.5px">Personalised gifts &amp;<br>everyday keepsakes</h2>
+      </div>
+      <a href="#contact" style="font-size:14px;font-weight:600;color:#211C16;border-bottom:1px solid #211C16;padding-bottom:3px" style-hover="color:#0B9444">Request a custom piece →</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px">
+      <sc-for list="{{ products }}" as="p" hint-placeholder-count="12">
+        <div style="background:#FBF9F2;border:1px solid #E8E1D0;border-radius:12px;overflow:hidden;display:flex;flex-direction:column" style-hover="box-shadow:0 24px 50px -30px rgba(33,28,22,0.55);transform:translateY(-3px)">
+          <div style="position:relative;aspect-ratio:1/1;overflow:hidden;background:#F2EEE2">
+            <img src="{{ p.img }}" alt="{{ p.name }}" style="width:100%;height:100%;object-fit:cover;display:block"/>
+            <sc-if value="{{ p.tag }}" hint-placeholder-val="">
+              <span style="position:absolute;top:12px;left:12px;background:#0B9444;color:#fff;font-size:10px;letter-spacing:1px;text-transform:uppercase;font-weight:700;padding:5px 10px;border-radius:30px">{{ p.tag }}</span>
+            </sc-if>
+          </div>
+          <div style="padding:18px 18px 20px;display:flex;flex-direction:column;gap:7px;flex:1">
+            <h3 style="font-family:'Cormorant Garamond',serif;font-size:23px;font-weight:600;line-height:1.05">{{ p.name }}</h3>
+            <p style="font-size:12.5px;color:#6B6157;line-height:1.5;flex:1">{{ p.spec }}</p>
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-top:8px;padding-top:12px;border-top:1px solid #ECE5D4">
+              <span style="font-size:13.5px;font-weight:700;color:#0B9444">{{ p.price }}</span>
+              <span style="width:30px;height:30px;border-radius:50%;border:1px solid #D8CFBC;display:flex;align-items:center;justify-content:center;font-size:15px;color:#211C16">→</span>
+            </div>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CORPORATE ============ -->
+<section id="corporate" style="max-width:1240px;margin:0 auto;padding:100px 40px 80px">
+  <div style="text-align:center;max-width:640px;margin:0 auto 56px">
+    <span style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#0B9444;font-weight:700">Corporate gifting</span>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:48px;line-height:1.05;margin:14px 0 16px;letter-spacing:-.5px">Curated sets that carry your brand</h2>
+    <p style="font-size:16px;color:#5C5347;line-height:1.7">Engraved gift suites for teams, clients and events — every set freely customisable, with bulk orders warmly accepted.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:26px;align-items:stretch">
+    <sc-for list="{{ packages }}" as="pk" hint-placeholder-count="3">
+      <div style="border-radius:14px;overflow:hidden;border:1px solid #E6DFCF;display:flex;flex-direction:column;background:#FBF9F2">
+        <div style="position:relative;aspect-ratio:4/3;overflow:hidden;background:#EEE8D9">
+          <img src="{{ pk.img }}" alt="{{ pk.name }}" style="width:100%;height:100%;object-fit:cover;display:block"/>
+          <span style="position:absolute;top:14px;right:14px;background:rgba(33,28,22,0.78);color:#fff;font-size:11px;font-weight:600;letter-spacing:1px;padding:5px 11px;border-radius:30px">#{{ pk.code }}</span>
+        </div>
+        <div style="padding:26px 26px 28px;display:flex;flex-direction:column;flex:1">
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:600;margin-bottom:16px">{{ pk.name }}</h3>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:9px;flex:1;margin-bottom:22px">
+            <sc-for list="{{ pk.items }}" as="it" hint-placeholder-count="4">
+              <li style="display:flex;align-items:center;gap:10px;font-size:14px;color:#3A332A;font-weight:500">
+                <span style="width:18px;height:18px;border-radius:50%;background:rgba(11,148,68,0.12);color:#0B9444;font-size:11px;display:flex;align-items:center;justify-content:center;flex:none">✓</span>
+                {{ it }}
+              </li>
+            </sc-for>
+          </ul>
+          <p style="font-size:12px;color:#8A8071;margin-bottom:18px;font-style:italic">{{ pk.note }}</p>
+          <a href="#contact" style="text-align:center;background:#211C16;color:#F6F2E9;font-size:14px;font-weight:600;padding:13px;border-radius:40px" style-hover="background:#0B9444">Enquire</a>
+        </div>
+      </div>
+    </sc-for>
+  </div>
+</section>
+
+<!-- ============ IMPORT / EXPORT ============ -->
+<section style="background:#211C16;color:#EDE7D8">
+  <div style="max-width:1240px;margin:0 auto;padding:0;display:grid;grid-template-columns:1fr 1fr;align-items:stretch">
+    <div style="padding:96px 56px 96px 40px;display:flex;flex-direction:column;justify-content:center">
+      <span style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#0B9444;font-weight:700">Import &amp; Export</span>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:46px;line-height:1.08;margin:16px 0 22px;letter-spacing:-.5px">From local hands to global homes.</h2>
+      <p style="font-size:16px;line-height:1.8;color:#B8B0A0;max-width:520px;margin-bottom:34px">At Chinoghar we connect Nepal's rich craftsmanship to global markets with integrity and precision — exporting premium materials and sourcing authentic bamboo products and handicrafts. Every product reflects our commitment to quality, transparency and trust.</p>
+      <div style="display:flex;gap:40px;flex-wrap:wrap">
+        <div><div style="font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:600;color:#EDE7D8">Worldwide</div><div style="font-size:13px;color:#9C9484;margin-top:4px">Delivery & sourcing</div></div>
+        <div><div style="font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:600;color:#EDE7D8">Premium</div><div style="font-size:13px;color:#9C9484;margin-top:4px">Quality materials</div></div>
+      </div>
+    </div>
+    <div style="min-height:420px;position:relative">
+      <img src="extracted/p09_i00.png" alt="Export shipping port" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"/>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SUSTAINABILITY BANNER ============ -->
+<section style="position:relative;overflow:hidden">
+  <img src="extracted/p02_i02.png" alt="Hands holding a young bamboo plant" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"/>
+  <div style="position:absolute;inset:0;background:linear-gradient(100deg,rgba(11,80,45,0.92) 0%,rgba(11,80,45,0.62) 55%,rgba(11,80,45,0.2) 100%)"></div>
+  <div style="position:relative;max-width:1240px;margin:0 auto;padding:110px 40px;color:#fff">
+    <div style="max-width:560px">
+      <span style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#BFE9CF;font-weight:700">Engraving with Love</span>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:50px;line-height:1.06;margin:16px 0 18px;letter-spacing:-.5px">Eco-friendly by promise, not by trend.</h2>
+      <p style="font-size:17px;line-height:1.75;color:#E6F2EA">We craft pieces that celebrate special moments while contributing positively to the community and the environment — biodegradable bamboo, responsibly sourced wood, and zero-waste intent in every order.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT / FOOTER ============ -->
+<section id="contact" style="background:#F6F2E9">
+  <div style="max-width:1240px;margin:0 auto;padding:96px 40px 56px">
+    <div style="display:grid;grid-template-columns:1.1fr 0.9fr;gap:64px;align-items:center">
+      <div>
+        <span style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#0B9444;font-weight:700">Get in touch</span>
+        <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:54px;line-height:1.02;margin:14px 0 24px;letter-spacing:-1px">Let's engrave<br>something for you.</h2>
+        <p style="font-size:16px;color:#5C5347;line-height:1.7;max-width:480px;margin-bottom:36px">Custom gifts, corporate suites, bulk orders and exports — tell us what you have in mind and our team will craft it with love.</p>
+        <div style="display:flex;flex-direction:column;gap:18px">
+          <a href="tel:+9779863203264" style="display:flex;align-items:center;gap:16px" style-hover="color:#0B9444">
+            <span style="width:46px;height:46px;border-radius:50%;background:#fff;border:1px solid #E6DFCF;display:flex;align-items:center;justify-content:center;font-size:18px">☎</span>
+            <span><span style="display:block;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#8A8071">Call us</span><span style="font-size:17px;font-weight:600">9863203264 · 9851176357 · 9849560661</span></span>
+          </a>
+          <a href="mailto:chinogharlab@gmail.com" style="display:flex;align-items:center;gap:16px" style-hover="color:#0B9444">
+            <span style="width:46px;height:46px;border-radius:50%;background:#fff;border:1px solid #E6DFCF;display:flex;align-items:center;justify-content:center;font-size:18px">✉</span>
+            <span><span style="display:block;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#8A8071">Email</span><span style="font-size:17px;font-weight:600">chinogharlab@gmail.com</span></span>
+          </a>
+          <div style="display:flex;align-items:center;gap:16px">
+            <span style="width:46px;height:46px;border-radius:50%;background:#fff;border:1px solid #E6DFCF;display:flex;align-items:center;justify-content:center;font-size:18px">⌖</span>
+            <span><span style="display:block;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#8A8071">Studio</span><span style="font-size:17px;font-weight:600">Sukedhara, Kathmandu, Nepal</span></span>
+          </div>
+        </div>
+      </div>
+      <div style="background:#211C16;border-radius:16px;padding:40px;color:#EDE7D8">
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;margin-bottom:6px">Request a quote</h3>
+        <p style="font-size:13px;color:#9C9484;margin-bottom:24px">We reply within one business day.</p>
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <input placeholder="Your name" style="background:#2C261E;border:1px solid #3A342A;border-radius:9px;padding:13px 15px;color:#EDE7D8;font-size:14px;font-family:inherit;outline:none"/>
+          <input placeholder="Email or phone" style="background:#2C261E;border:1px solid #3A342A;border-radius:9px;padding:13px 15px;color:#EDE7D8;font-size:14px;font-family:inherit;outline:none"/>
+          <textarea placeholder="What would you like engraved?" rows="3" style="background:#2C261E;border:1px solid #3A342A;border-radius:9px;padding:13px 15px;color:#EDE7D8;font-size:14px;font-family:inherit;outline:none;resize:vertical"></textarea>
+          <button style="background:#0B9444;color:#fff;border:none;border-radius:40px;padding:14px;font-size:14px;font-weight:600;font-family:inherit;cursor:pointer" style-hover="background:#0A7E3A">Send request</button>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:72px;padding-top:30px;border-top:1px solid #E0D8C6;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="width:34px;height:34px;border-radius:50%;background:#0B9444;display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:19px">C</span>
+        <span style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600">Chinoghar Pvt. Ltd.</span>
+      </div>
+      <p style="font-size:13px;color:#8A8071">© 2026 Chinoghar Pvt. Ltd. · Engraving with Love · www.chinoghar.com</p>
+    </div>
+  </div>
+</section>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const clients = [
+      { src: 'extracted/p04_i00.png', name: 'Storm' },
+      { src: 'extracted/p04_i07.png', name: 'HAMS Hospital' },
+      { src: 'extracted/p04_i06.png', name: 'Mero Coding' },
+      { src: 'extracted/p04_i05.png', name: 'Pokhara Bird Society' },
+      { src: 'extracted/p04_i08.png', name: 'Jimmal Group' },
+      { src: 'extracted/p04_i09.png', name: 'Bijaya Abhushan' },
+      { src: 'extracted/p04_i10.png', name: 'Lemon Tree Premier' },
+      { src: 'extracted/p04_i12.png', name: 'Sunkoshi Adventure Retreat' },
+      { src: 'extracted/p04_i13.png', name: 'Shining Nepal Multipurpose' },
+      { src: 'extracted/p04_i16.png', name: 'Shimran Digital Technologies' },
+      { src: 'extracted/p04_i17.png', name: 'Varosa Services' },
+      { src: 'extracted/p04_i18.png', name: 'Junction Cafe & Restro' },
+      { src: 'extracted/p04_i15.png', name: 'Beauty Plus Nature Care' },
+      { src: 'extracted/p04_i02.png', name: 'Refuge Mera' },
+      { src: 'extracted/p04_i03.png', name: 'Aston Kohalpur' },
+      { src: 'extracted/p04_i01.png', name: 'Bardia Homestay' },
+      { src: 'extracted/p04_i11.png', name: '29 & Twins Resort Farmhouse' },
+      { src: 'extracted/p04_i14.png', name: 'Karya Thalo Workplace' },
+    ];
+    const deals = [
+      { name: 'Wood', initial: '01', sub: 'Personalised · Karam to Walnut', img: 'extracted/p10_i01.png' },
+      { name: 'Bamboo', initial: '02', sub: 'Sustainable · Biodegradable', img: 'extracted/p06_i02.png' },
+      { name: 'Glass', initial: '03', sub: 'Laser-etched · Celebratory', img: 'extracted/p07_i00.png' },
+      { name: 'Acrylic / MDF', initial: '04', sub: 'Sharp · Modern signage', img: 'extracted/p11_i01.png' },
+    ];
+    const products = [
+      { name: 'Bamboo Mug', spec: 'Premium bamboo & steel · 400 / 750 ml', price: 'Best Seller', img: 'extracted/p06_i02.png', tag: 'Best Seller' },
+      { name: 'Bamboo Bottle', spec: 'Organic bamboo & steel · 400 / 500 ml', price: 'Eco-Friendly', img: 'extracted/p06_i01.png', tag: 'Eco' },
+      { name: 'Bamboo Coffee Cup', spec: 'Natural bamboo · reusable & portable', price: 'From NPR 1,049', img: 'extracted/p07_i03.png', tag: '' },
+      { name: 'Bamboo Brush', spec: '100% natural bamboo · biodegradable', price: 'Customisable', img: 'extracted/p06_i00.png', tag: '' },
+      { name: 'Custom Glass Set', spec: 'Laser-engraved glass · for Him / Her', price: 'From NPR 1,999', img: 'extracted/p07_i00.png', tag: '' },
+      { name: 'Wooden Pen Holder', spec: 'Bamboo / wood · perpetual calendar', price: 'From NPR 1,399', img: 'extracted/p07_i01.png', tag: '' },
+      { name: 'Personalised Keychain', spec: 'Wood / acrylic · name & date engraving', price: 'From NPR 249', img: 'extracted/p07_i02.png', tag: '' },
+      { name: 'Token of Love', spec: 'Natural wood · custom design award', price: 'Custom quote', img: 'extracted/p10_i00.png', tag: '' },
+      { name: 'Engraved Photo Frame', spec: 'Wood · custom engraving for memories', price: 'Custom quote', img: 'extracted/p10_i02.png', tag: '' },
+      { name: 'Engraved Name Board', spec: 'Natural wood · engrave or emboss', price: 'Custom quote', img: 'extracted/p10_i01.png', tag: '' },
+      { name: 'Glass Award', spec: 'Premium glass · etched recognition', price: 'Custom quote', img: 'extracted/p11_i00.png', tag: '' },
+      { name: 'Custom Name Plate', spec: 'Hardwood · home & office signage', price: 'Custom quote', img: 'extracted/p05_i04.png', tag: '' },
+    ];
+    const packages = [
+      { code: 'CG01', name: 'Starter Set', items: ['Engraved Pen', 'Premium Diary'], note: 'Free customisation & modifications', img: 'extracted/p08_i00.png', featured: false },
+      { code: 'CG02', name: 'Premium Set', items: ['Bottle', 'Mug', 'Keychain', 'Card Holder'], note: 'Free customisation & modifications', img: 'extracted/p08_i01.png', featured: true },
+      { code: 'CG03', name: 'Executive Set', items: ['Diary', 'Pen', 'Keyring', 'Mug', 'Bottle', 'Card Holder'], note: 'Free customisation · bulk orders accepted', img: 'extracted/p08_i02.png', featured: false },
+    ];
+    return {
+      clients,
+      clientsLoop: [...clients, ...clients],
+      deals, products, packages,
+    };
+  }
+}
+</script>
+</body>
+</html>
